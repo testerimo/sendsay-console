@@ -1,0 +1,89 @@
+.field--invalid .field__label {
+  color: var(--destructive-color);
+}
+
+.field--invalid .field__input,
+.field--invalid .field__input:hover,
+.field--invalid .field__input:focus {
+  border: 1px solid var(--destructive-color);
+  box-shadow: 0px 0px 5px var(--destructive-shadow-color);
+}
+
+.field__label {
+  padding-bottom: 5px;
+
+  line-height: 125%;
+}
+
+.field__optional {
+  float: right;
+
+  color: #999;
+
+  font-size: 12px;
+  line-height: 167%;
+}
+
+.field__input {
+  width: 100%;
+  margin: 0;
+  padding: 5px 10px;
+
+  cursor: pointer;
+
+  border: 1px solid var(--main-border-color);
+  border-radius: var(--main-border-radius);
+  background-color: var(--secondary-bg-color);
+
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.field__input:hover,
+.field__input:focus {
+  border: 1px solid var(--secondary-border-color);
+}
+
+.field__input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--main-shadow-color);
+}
+
+.field__textarea {
+  width: 100%;
+  padding: 10px;
+
+  cursor: pointer;
+
+  border: 1px solid var(--main-border-color);
+  border-radius: var(--main-border-radius);
+  background-color: var(--secondary-bg-color);
+
+  font-family: "Fira Code", "SF Mono", monospace;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.field__textarea:hover,
+.field__textarea:focus {
+  border: 1px solid var(--secondary-border-color);
+}
+
+.field__textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--main-shadow-color);
+}
+
+.field__textarea:disabled {
+  cursor: default;
+
+  color: var(--text-color);
+  border-color: var(--main-border-color);
+}
+
+.field--invalid .field__textarea,
+.field--invalid .field__textarea:hover,
+.field--invalid .field__textarea:focus {
+  border: 1px solid var(--destructive-color);
+  box-shadow: 0px 0px 5px var(--destructive-shadow-color);
+}

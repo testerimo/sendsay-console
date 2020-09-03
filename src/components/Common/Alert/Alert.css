@@ -1,0 +1,44 @@
+.alert {
+  position: relative;
+
+  margin-bottom: 20px;
+  padding: 10px;
+  padding-left: 42px;
+
+  word-wrap: break-word;
+
+  color: var(--destructive-color);
+  border-radius: var(--main-border-radius);
+  background: var(--destructive-bg-color);
+}
+
+.alert:before {
+  position: absolute;
+  top: 13px;
+  left: 10px;
+
+  width: 25px;
+  height: 25px;
+
+  content: "";
+
+  background: url('./icons/meh.svg') no-repeat;
+}
+
+.alert__title {
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+.alert__details {
+  opacity: 0.5;
+
+  font-size: 12px;
+  line-height: 20px;
+
+  overflow-wrap: break-word;
+
+}

@@ -1,0 +1,17 @@
+.split__gutter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.split__gutter .split__icon {
+  transform: scale(2);
+
+  opacity: 0.2;
+}
+
+.split__gutter:hover .split__icon {
+  opacity: 0.4
+}

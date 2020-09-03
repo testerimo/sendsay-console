@@ -1,0 +1,25 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+}
+
+.login__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 20px 0;
+}
+
+.login__logo {
+  overflow: visible;
+
+  margin-bottom: 20px;
+}
+
+.login__gitHubLink {
+  margin-top: 20px;
+}

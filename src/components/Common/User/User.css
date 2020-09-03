@@ -1,0 +1,14 @@
+.user {
+  padding: 4px 15px;
+
+  border: 1px solid var(--main-border-color);
+  border-radius: var(--main-border-radius);
+
+  line-height: 20px;
+}
+
+.user__divider {
+  padding: 5px;
+
+  color: var(--main-border-color);
+}
