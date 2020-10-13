@@ -1,0 +1,110 @@
+.button {
+  margin: 0;
+
+  cursor: pointer;
+  text-align: center;
+
+  border: 0;
+  border-radius: var(--main-border-radius);
+
+  font-size: 16px;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:disabled {
+  cursor: default;
+}
+
+.button__label,
+.button__icon {
+  vertical-align: middle;
+}
+
+.button__icon {
+  align-self: center;
+}
+
+.button--variant-text {
+  height: 32px;
+  padding: 4px;
+
+  color: var(--text-color);
+  background: transparent;
+
+  line-height: 125%;
+}
+
+.button--variant-text:focus {
+  box-shadow: 0 0 0 2px var(--secondary-accent-color);
+}
+
+.button--variant-text:hover,
+.button--variant-text:focus {
+  color: var(--accent-color);
+}
+
+.button--variant-text:hover .button__icon,
+.button--variant-text:focus .button__icon {
+  stroke: var(--accent-color);
+}
+
+.button--variant-text:disabled {
+  opacity: 0.2;
+  color: var(--text-color);
+}
+
+.button--variant-text:disabled .button__icon {
+  stroke: var(--text-color);
+}
+
+.button__icon--position-start {
+  margin-right: 8px;
+}
+
+.button__icon--position-end {
+  margin-left: 8px;
+}
+
+.button--variant-contained {
+  min-width: 110px;
+  height:40px;
+  padding: 5px 15px;
+
+  color: var(--light-text-color);
+  background: linear-gradient(180deg, var(--secondary-accent-color) 0%, var(--accent-color) 100%), var(--gray-color);
+
+  font-weight: 500;
+  line-height: 187%;
+}
+
+.button--variant-contained:focus {
+  box-shadow: 0 0 0 2px var(--accent-border-color);
+}
+
+.button--variant-contained:hover {
+  background:
+    linear-gradient(0deg, var(--lighter-color), var(--lighter-color)),
+    linear-gradient(180deg, var(--secondary-accent-color) 0%, var(--accent-color) 100%), var(--gray-color);
+}
+
+.button--variant-contained:active {
+  background:
+    linear-gradient(0deg, var(--darker-color), var(--darker-color)),
+    linear-gradient(180deg, var(--secondary-accent-color) 0%, var(--accent-color) 100%), var(--gray-color);
+}
+
+.button--variant-contained:disabled {
+  color: var(--light-text-color);
+  background:
+    linear-gradient(0deg, var(--gray-color), var(--gray-color)),
+    linear-gradient(180deg, var(--secondary-accent-color) 0%, var(--accent-color) 100%);
+}
+
+.button--variant-contained .button__icon {
+  opacity: 0.9;
+
+  stroke: var(--light-text-color);
+}

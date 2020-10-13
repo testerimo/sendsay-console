@@ -1,0 +1,21 @@
+.loginForm {
+  width: 520px;
+  padding: 40px 30px;
+
+  border-radius: var(--main-border-radius);
+  background-color: var(--secondary-bg-color);
+  box-shadow: 0px 4px 10px var(--secondary-shadow-color);
+}
+
+.loginForm__title {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.loginForm__field {
+  margin-bottom: 20px;
+}

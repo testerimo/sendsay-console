@@ -1,0 +1,17 @@
+.console {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 640px;
+  min-height: 100%;
+}
+
+.console__requestResponse {
+  flex: 1;
+}
+
+@media (max-height: 520px) {
+  .console {
+    min-height: 520px;
+  }
+}

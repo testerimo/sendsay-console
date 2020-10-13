@@ -1,0 +1,40 @@
+.requestResponse {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100%;
+
+  background: var(--secondary-bg-color);
+}
+
+.requestResponse__split {
+  display: flex;
+  align-items: stretch;
+  flex: 1;
+
+  padding: 10px 15px;
+}
+
+.requestResponse__editor {
+  display: flex;
+  flex-direction: column;
+}
+
+.requestResponse__editor .field__textarea {
+  flex: 1;
+
+  resize: none;
+}
+
+.requestResponse__editor .field__label {
+  padding-bottom: 0;
+
+  color: #999;
+
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.field--invalid .field__label {
+  color: var(--destructive-color);
+}
